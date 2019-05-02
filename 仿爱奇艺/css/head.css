@@ -1,0 +1,322 @@
+@charset "utf-8";
+#lqiyi_head .block_banana{
+    width: 100%;
+    height: 520px;
+    background: #000000;
+}
+#lqiyi_head .block_banana .main_banana{
+    position: relative;
+    width: 1425px;
+    height: 432px;
+    background: #212123;
+}
+.main_banana .main_img img{
+    position: absolute;
+    width: 100%;
+    height: 432px;
+}
+.main_banana .main_img{
+    display: none;
+}
+.main_banana .active{
+    display: block;
+}
+.block_banana .focus_moviename{
+    position: absolute;
+    float: right;
+    width: 276px;
+    height: 432px;
+    top: 70px;
+    right: 70px;
+    background: rgba(0,0,0,.5);
+}
+.focus_moviename .moviename_list{
+    width: 276px;
+    height: 400px;
+    padding: 16px 0;
+}
+.moviename_list .moviename{
+    width: 276px;
+    height: 40px;
+    margin-left: 20px;
+    line-height: 40px;
+    font-size: 16px;
+}
+.moviename_list .moviename a {
+    color: #fff;
+}
+/*.moviename_list .active a{*/
+    /*color: #5CBF10;*/
+/*}*/
+/*使用js做特效删掉下面hover*/
+.moviename_list .moviename:hover a{
+    color: #5CBF10;
+}
+.block_banana .main_btm{
+    width: 100%;
+    height: 88px;
+    background: #1D1D1D;
+}
+.main_btm .movieclass{
+    position: relative;
+    width: 1285px;
+    height: 62px;
+    margin: 0 auto;
+    padding: 13px 0;
+}
+.movieclass .moclass_list{
+    display: inline-block;
+}
+.movieclass .moclass_f{
+    position: relative;
+    width: 233px;
+    height: 62px;
+    font-size: 14px;
+}
+.movieclass .moclass_f:after{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 4px;
+    height: 62px;
+    top: 0;
+    right: -4px;
+    background: url("../images/small_pic/sbg05.png") no-repeat;
+    background-position: -1px -15px;
+}
+.moclass_list .moclass_inr{
+    float: left;
+    width: 28px;
+    height: 31px;
+    margin-right: 15px;
+    color: #fff;
+    line-height: 31px;
+}
+.moclass_list .inr_iden{
+    position: relative;
+    width: 56px;
+    height: 31px;
+}
+/*节目hover的特效*/
+.inr_iden .movie_items{
+    position: absolute;
+    width: 486px;
+    height: 229px;
+    left: -28px;
+    bottom: 35px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    opacity: 0.98;
+    background: #29282B;
+}
+.inr_iden .movie_items:before{
+    content: "";
+    position: absolute;
+    float: right;
+    left: 44px;
+    bottom: -25px;
+    border: 8px solid #29282B;
+    margin-left: -10px;
+    margin-bottom: 9px;
+    opacity: 0.98;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+.movie_items .items_wrap{
+    width: 456px;
+    height: 208px;
+    padding: 13px 10px 8px 20px;
+}
+.movie_items .items_wrap a{
+    width: 446px;
+    height: 24px;
+    margin-bottom: 10px;
+    line-height: 24px;
+    color: #ccc;
+    font-size: 14px;
+}
+.movie_items .items_wrap p:hover a{
+    color: #5CBF10;
+}
+.items_wrap .items_pic{
+    width: 456px;
+    height: 167px;
+}
+.items_wrap .items_pic a{
+    float: left;
+    width: 104px;
+    height: 167px;
+    margin-right: 10px;
+}
+.items_wrap .items_pic img{
+    width: 104px;
+    height: 138px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    transition: all .5s;
+}
+.items_wrap ul li img:hover{
+    transform: scale(1.1);
+}
+.items_wrap .items_pic a span{
+    display: block;
+    width: 104px;
+    height: 24px;
+    color: #ccc;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre;
+}
+.items_wrap ul li:hover span{
+    color: #5CBF10;
+}
+.movie_items{
+    display: none;
+}
+.inr_iden:hover .movie_items{
+    display: block;
+}
+.inr_itl .movie_items2{
+    position: absolute;
+    width: 486px;
+    height: 229px;
+    left: 95px;
+    bottom: 65px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    opacity: 0.98;
+    background: #29282B;
+}
+.inr_itl .movie_items2:before{
+    content: "";
+    position: absolute;
+    float: right;
+    left: 44px;
+    bottom: -25px;
+    border: 8px solid #29282B;
+    margin-left: -10px;
+    margin-bottom: 9px;
+    opacity: 0.98;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+.movie_items2 .items_wrap{
+    width: 456px;
+    height: 208px;
+    padding: 13px 10px 8px 20px;
+}
+.movie_items2 .items_wrap a{
+    color: #ccc;
+    font-size: 14px;
+}
+.movie_items2 .items_wrap p:hover a{
+    color: #5CBF10;
+}
+.movie_items2{
+    display: none;
+}
+.inr_itl:hover .movie_items2{
+    display: block;
+}
+    /*节目hover的特效结束*/
+.moclass_list .inr_itl{
+    width: 42px;
+    height: 31px;
+}
+.moclass_list .inr_identical{
+    width: 42px;
+    height: 31px;
+}
+.moclass_inr .molink{
+    color: #fff;
+}
+.movieclass .moclass_s{
+    position: relative;
+    width: 172px;
+    height: 62px;
+    top: -62px;
+    right: -240px;
+    padding: 0 5px 0 20px;
+    font-size: 14px;
+}
+.movieclass .moclass_s:after{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 4px;
+    height: 62px;
+    top: 0;
+    right: -5px;
+    background: url("../images/small_pic/sbg05.png") no-repeat;
+    background-position: -1px -15px;
+}
+.movieclass .moclass_t{
+    position: relative;
+    width: 315px;
+    height: 62px;
+    top: -62px;
+    right: -240px;
+    padding: 0 5px 0 20px;
+    font-size: 14px;
+}
+.movieclass .moclass_t:after{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 4px;
+    height: 62px;
+    top: 0;
+    right: -5px;
+    background: url("../images/small_pic/sbg05.png") no-repeat;
+    background-position: -1px -15px;
+}
+.movieclass .moclass_fs{
+    position: relative;
+    width: 384px;
+    height: 62px;
+    top: -62px;
+    right: -240px;
+    padding: 0 5px 0 20px;
+    font-size: 14px;
+}
+.movieclass .moclass_fs:after{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 4px;
+    height: 62px;
+    top: 0;
+    right: -5px;
+    background: url("../images/small_pic/sbg05.png") no-repeat;
+    background-position: -1px -15px;
+}
+.moclass_inr .molink:hover{
+    color: #5CBF10;
+}
+.movieclass .VIP_logo{
+    position: absolute;
+    display: inline-block;
+    width: 56px;
+    height: 55px;
+    top: 17px;
+    right: 0;
+    padding-left: 25px;
+    font-size: 14px;
+}
+.movieclass .VIP_logo i{
+    display: inline-block;
+    width: 37px;
+    height: 32px;
+    margin-left: 10px;
+    background: url("../images/small_pic/sbg2.png") no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+}
+.movieclass .VIP_logo span{
+    display: inline-block;
+    width: 56px;
+    height: 32px;
+    color: #5CBF10;
+}
